@@ -1,0 +1,57 @@
+dataSources:
+  - name: bds2018
+    type: csv
+    config:
+      path: "data/bds2018.csv"
+  - name: bds2018_city
+    type: csv
+    config:
+      path: "data/bds2018_cty.csv"
+  - name: bds2018_eag
+    type: csv
+    config:
+      path: "data/bds2018_eage.csv"
+  - name: bds2018_esize
+    type: csv
+    config:
+      path: "data/bds2018_esize.csv"
+  - name: bds2018_fage
+    type: csv
+    config:
+      path: "data/bds2018_fage.csv"
+  - name: bds2018_fsize
+    type: csv
+    config:
+      path: "data/bds2018_fsize.csv"
+  - name: bds2018_iesize
+    type: csv
+    config:
+      path: "data/bds2018_iesize.csv"
+  - name: bds2018_ifsize
+    type: csv
+    config:
+      path: "data/bds2018_ifsize.csv"
+  - name: bds2018_metro
+    type: csv
+    config:
+      path: "data/bds2018_metro.csv"
+  - name: bds2018_msa
+    type: csv
+    config:
+      path: "data/bds2018_msa.csv"
+  - name: bds2018_sector
+    type: csv
+    config:
+      path: "data/bds2018_sector.csv"
+  - name: bds2018_st
+    type: csv
+    config:
+      path: "data/bds2018_st.csv"
+  - name: bds2018_vcnaics3
+    type: csv
+    config:
+      path: "data/bds2018_vcnaics3.csv"
+  - name: bds2018_vcnaics4
+    type: csv
+    config:
+      path: "data/bds2018_vcnaics4.csv"

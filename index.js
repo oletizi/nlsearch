@@ -12,6 +12,9 @@ async function test() {
       console.log('state id: ', state.state)
       console.log('state name: ', state.name)
 
+      const county = await db.getCountyByName(conn, state.state, 'Sonoma')
+      console.log('county id: ', county.county)
+      console.log('county name: ', county.name)
       //const name = await db.getStateName(conn, id)
       //console.log('name: ', name)
 

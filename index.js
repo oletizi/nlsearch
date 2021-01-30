@@ -8,11 +8,14 @@ async function test() {
     try {
       conn = db.getConnection()
 
-      const id = await db.getStateByName(conn, 'California')
-      console.log('id: ', id)
+      const state = await db.getStateByName(conn, 'California')
+      console.log('state id: ', state.state)
+      console.log('state name: ', state.name)
 
-      const name = await db.getStateName(conn, id)
-      console.log('name: ', name)
+      //const name = await db.getStateName(conn, id)
+      //console.log('name: ', name)
+
+      //getBusinessCountPerCounty()
     } catch (err) {
       reject(err)
     } finally {

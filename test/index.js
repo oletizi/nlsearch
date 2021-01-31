@@ -18,11 +18,24 @@ async function test() {
       //const name = await db.getStateName(conn, id)
       //console.log('name: ', name)
 
+      const rs = await db.getJobCreationRange(conn, 1000, 2008, 2009)
+      printRs(rs)
+
       //getBusinessCountPerCounty()
     } catch (err) {
       reject(err)
     } finally {
       db.returnConnection(conn)
     }
+  })
+}
+
+function printRs(rs) {
+  rs.map((row) => {
+    let out = []
+    for (const [key, value] of Object.entries(row)) {
+      out.push(value)
+    }
+    console.log(out.join(','))
   })
 }

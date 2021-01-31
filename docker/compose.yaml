@@ -11,8 +11,7 @@ services:
     volumes:
       - ../sql/init:/docker-entrypoint-initdb.d
 
-  adminer:
-    image: adminer
-    restart: always
+  rest:
+    image: oletizi/nlsearch-rest-api
     ports:
-      - 8080:8080
+      - 3000:3000

@@ -2,14 +2,17 @@
   "name": "nlsearch",
   "version": "1.0.0",
   "description": "test natural language search",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Orion Letizi",
   "license": "ISC",
   "dependencies": {
     "airbnbapijs": "^0.10.5",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
     "log4js": "^6.3.0",
     "mysql": "^2.18.1"
   }
